@@ -46,31 +46,81 @@ p {
   margin:0 2% 20px;
 }
 
-/* media queries */
-@media (min-width: 48em) {
+/* Mobile-First Media Queries */
+/* mobile phones */
+@media (min-width 481px) and (max-width: 767px) {
   .container {
-    width: 46.875em;
+    width: 750px;
+  }
+  header .hero h1 {
+    font-size: 32px;
+    font-weight: normal;
+    margin: 95px 0 0;
+  }
+  header .hero p {
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: 100;
+    margin: 10px 0 40px;
+  }
+  header .hero img {
+    display: block;
+    margin: 3em auto;
   }
 }
-@media (min-width: 62em) and (max-width: 74.9375em) {
+
+/* tablets */
+@media (min-width: 768) and (max-width 1199px) {
   .container {
-    width: 60.625em;
+    width: 992px;
   }
   .one-half {
-    width:46%;
+    width: 46%;
   }
   .one-third {
-    width:29.33333%;
+    width: 29.33333%;
   }
   .one-fourth {
-    width:21%;
+    width: 21%;
+  }
+  header .hero h1 {
+    font-size: 40px;
+    font-weight: normal;
+    margin: 95px 0 0;
+  }
+  header .hero p {
+    font-size: 22px;
+    line-height: 26px;
+    font-weight: 100;
+    margin: 10px 0 40px;
+  }
+  header .hero img {
+    display: block;
+    margin: 3em auto;
   }
 }
-@media (min-width: 75em) {
-  .container {
-    width: 73.125em;
+
+  /* Desktop devices */
+  @media (min-width: 1200px) {
+    .container {
+      width: 1170px;
+    }
+    header .hero h1 {
+      font-size: 48px;
+      font-weight: normal;
+      margin: 95px 0 0;
+    }
+    header .hero p {
+      font-size: 22px;
+      line-height: 30px;
+      font-weight: 100;
+      margin: 10px 0 40px;
+    }
+    header .hero img {
+      display: block;
+      margin: 3em auto;
+    }
   }
-}
 
 /* header styling */
  header {
@@ -112,21 +162,6 @@ p {
    display:block;
    position: relative;
  }
- header .hero h1 {
-   font-size: 3em;
-   font-weight: normal;
-   margin: 5.937em 0 0;
- }
- header .hero p {
-   font-size: 1.375em;
-   line-height: 1.625em;
-   font-weight: 100;
-   margin:10px 0 2.5em;
- }
- header .hero img {
-   display: block;
-   margin:3em auto 0;
- }
 
 /* button styling */
 .btn {
@@ -138,4 +173,28 @@ p {
   background: #2ecc71;
   border: 2px solid #2ecc71;
   box-shadow: 0px 2px 0px 0px #22894e;
+}
+
+/* benefits styling */
+.benefits {
+  text-align: center;
+  display:block;
+  position:relative;
+}
+.benefits ul {
+  margin: 0 auto;
+  padding:4em 0;
+}
+.benefits ul li {
+  list-style-type: none;
+  display: inline-block;
+}
+.benefits i {
+  color: #3498db;
+  font-size: 60px;
+  margin: 0;
+  vertical-align: middle;
+}
+.benefits h2 {
+  color: #3498db;
 }
