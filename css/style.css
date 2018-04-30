@@ -46,8 +46,9 @@ p {
   margin:0 2% 20px;
 }
 
+
 /* Media Queries (original) */
-@media (min-width: 768px) {
+/* @media (min-width: 768px) {
   .container {
     width: 750px;
   }
@@ -71,9 +72,11 @@ p {
     width: 1170px;
   }
 }
-/* Mobile-First Media Queries
-/* mobile phones
-@media (min-width 481px) and (max-width: 767px) {
+*/
+
+/* Media Queries (for Mobile-First) */
+/* mobile phones */
+@media (min-width 300px) and (max-width: 768px) {
   .container {
     width: 750px;
   }
@@ -94,19 +97,10 @@ p {
   }
 }
 
-/* tablets
-@media (min-width: 768) and (max-width 1199px) {
+/* tablets */
+@media (min-width: 768) and (max-width: 1199){
   .container {
     width: 992px;
-  }
-  .one-half {
-    width: 46%;
-  }
-  .one-third {
-    width: 29.33333%;
-  }
-  .one-fourth {
-    width: 21%;
   }
   header .hero h1 {
     font-size: 40px;
@@ -125,10 +119,19 @@ p {
   }
 }
 
-  /* Desktop devices
-  @media (min-width: 1200px) {
+  /* Desktop devices */
+  @media (min-width: 1200px) and (max-width: 1600px) {
     .container {
       width: 1170px;
+    }
+    .one-half {
+      width: 46%;
+    }
+    .one-third {
+      width: 29.33333%;
+    }
+    .one-fourth {
+      width: 21%;
     }
     header .hero h1 {
       font-size: 48px;
@@ -146,10 +149,9 @@ p {
       margin: 3em auto;
     }
   }
- */
 
-/* Header (original) */
-/* HEADER */
+/* Header (original)
+/* HEADER
 header {
   color:#FFFFFF;
   background: #34495E;
@@ -204,8 +206,9 @@ header .hero {
    display: block;
    margin:3em auto 0;
  }
+ */
 
-/* header changed
+/* header (for Mobile-First) */
  header {
    color:#FFFFFF;
    background: #34495E;
