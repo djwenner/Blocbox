@@ -73,7 +73,8 @@ p {
   }
 }
 
-/* Media Queries (for Mobile-First)
+
+/* Media Queries (for Mobile-First) */
 /* mobile phones
 @media (min-width 300px) and (max-width: 768px) {
   .container {
@@ -206,9 +207,9 @@ header .hero {
    display: block;
    margin:3em auto 0;
  }
+*/
 
-
-/* header (for Mobile-First)
+/* header (for Mobile-First) 
  header {
    color:#FFFFFF;
    background: #34495E;
