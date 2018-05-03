@@ -46,6 +46,417 @@ p {
   margin:0 2% 20px;
 }
 
+/* Mobile-First Media Queries */
+/* mobile phones */
+@media (min-width 481px) and (max-width: 767px) {
+  .container {
+    width: 750px;
+  }
+  header .hero h1 {
+    font-size: 28px;
+    font-weight: normal;
+    margin: 95px 0 0;
+  }
+  header .hero p {
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: 100;
+    margin: 10px 0 40px;
+  }
+  header .hero img {
+    display: block;
+    margin: 3em auto;
+  }
+}
+
+/* tablets */
+@media (min-width: 768) and (max-width 1199px) {
+  .container {
+    width: 992px;
+  }
+  .one-half {
+    width: 46%;
+  }
+  .one-third {
+    width: 29.33333%;
+  }
+  .one-fourth {
+    width: 21%;
+  }
+  header .hero h1 {
+    font-size: 40px;
+    font-weight: normal;
+    margin: 95px 0 0;
+  }
+  header .hero p {
+    font-size: 22px;
+    line-height: 26px;
+    font-weight: 100;
+    margin: 10px 0 40px;
+  }
+  header .hero img {
+    display: block;
+    margin: 3em auto;
+  }
+}
+
+  /* Desktop devices */
+  @media (min-width: 1200px) {
+    .container {
+      width: 1170px;
+    }
+    header .hero h1 {
+      font-size: 48px;
+      font-weight: normal;
+      margin: 95px 0 0;
+    }
+    header .hero p {
+      font-size: 22px;
+      line-height: 30px;
+      font-weight: 100;
+      margin: 10px 0 40px;
+    }
+    header .hero img {
+      display: block;
+      margin: 3em auto;
+    }
+  }
+
+/* header styling */
+ header {
+   color:#FFFFFF;
+   background: #34495E;
+   background-image: linear-gradient(206deg, #5F81A3 0%, #34495E 94%);
+ }
+ header nav {
+   padding:1em 0;
+ }
+ header nav ul {
+   display:inline;
+   text-align: right;
+   float:right;
+   margin:0;
+ }
+ header nav ul > li {
+   list-style-type: none;
+   display: inline-block;
+   margin:0 15px;
+ }
+ header nav ul > li.btn-outline {
+   padding:10px 15px;
+   border:2px solid #FFFFFF;
+   border-radius: 4px;
+ }
+ header nav ul > li.btn-outline:hover {
+   background:#FFFFFF;
+ }
+ header nav ul > li > a {
+   color:#FFFFFF;
+   text-decoration: none;
+ }
+ header nav ul > li.btn-outline:hover > a {
+   color:#34495E;
+ }
+ header .hero {
+   text-align: center;
+   display:block;
+   position: relative;
+ }
+
+/* button styling */
+.btn {
+  border-radius: 4px;
+  color: #FFFFFF;
+  font-weight: 700;
+  text-decoration: none;
+  padding: 10px 30px;
+  background: #2ecc71;
+  border: 2px solid #2ecc71;
+  box-shadow: 0px 2px 0px 0px #22894e;
+}
+
+/* benefits styling */
+.benefits {
+  text-align: center;
+  display:block;
+  position:relative;
+}
+.benefits ul {
+  margin: 0 auto;
+  padding:4em 0;
+}
+.benefits ul li {
+  list-style-type: none;
+  display: inline-block;
+}
+.benefits i {
+  color: #3498db;
+  font-size: 60px;
+  margin: 0;
+  vertical-align: middle;
+}
+.benefits h2 {
+  color: #3498db;
+}
+
+
+/* Anything past the margins is not displayed
+html, body{
+  overflow-x: hidden;
+}
+
+/* Applies styles to paragraphs and headings
+body {
+  font-family: "Lato", Helvetica, Arial, sans-serif;
+  color:#333333;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Varela Round", Helvetica, Arial, sans-serif;
+}
+h2 {
+  font-size: 28px;
+  font-weight: normal;
+  margin-bottom: 5px;
+}
+p {
+  font-size: 16px;
+  line-height: 19px;
+  font-weight: 200;
+}
+
+/* Apply grid formatting
+.container {
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  position: relative;
+}
+.container:before,
+.container:after {
+  content: " ";
+  display: table;
+}
+.container:after {
+  clear: both;
+}
+.one-half, .one-third, .one-fourth {
+  width:96%;
+  float:left;
+  position:relative;
+  min-height: 1px;
+  margin:0 2% 20px;
+}
+
+/*
+/* Mobile-First Media Queries
+/* mobile phones
+@media (min-width 481px) and (max-width: 767px) {
+  .container {
+    width: 750px;
+  }
+  header .hero h1 {
+    font-size: 32px;
+    font-weight: normal;
+    margin: 95px 0 0;
+  }
+  header .hero p {
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: 100;
+    margin: 10px 0 40px;
+  }
+  header .hero img {
+    display: block;
+    margin: 3em auto;
+  }
+}
+/* tablets
+@media (min-width: 768) and (max-width 1199px) {
+  .container {
+    width: 992px;
+  }
+  .one-half {
+    width: 46%;
+  }
+  .one-third {
+    width: 29.33333%;
+  }
+  .one-fourth {
+    width: 21%;
+  }
+  header .hero h1 {
+    font-size: 40px;
+    font-weight: normal;
+    margin: 95px 0 0;
+  }
+  header .hero p {
+    font-size: 22px;
+    line-height: 26px;
+    font-weight: 100;
+    margin: 10px 0 40px;
+  }
+  header .hero img {
+    display: block;
+    margin: 3em auto;
+  }
+}
+  /* Desktop devices
+  @media (min-width: 1200px) {
+    .container {
+      width: 1170px;
+    }
+    header .hero h1 {
+      font-size: 48px;
+      font-weight: normal;
+      margin: 95px 0 0;
+    }
+    header .hero p {
+      font-size: 22px;
+      line-height: 30px;
+      font-weight: 100;
+      margin: 10px 0 40px;
+    }
+    header .hero img {
+      display: block;
+      margin: 3em auto;
+    }
+  }
+ */
+
+/* header styling
+ header {
+   color:#FFFFFF;
+   background: #34495E;
+   background-image: linear-gradient(206deg, #5F81A3 0%, #34495E 94%);
+ }
+ header nav {
+   padding:1em 0;
+ }
+ header nav ul {
+   display:inline;
+   text-align: right;
+   float:right;
+   margin:0;
+ }
+ header nav ul > li {
+   list-style-type: none;
+   display: inline-block;
+   margin:0 15px;
+ }
+ header nav ul > li.btn-outline {
+   padding:10px 15px;
+   border:2px solid #FFFFFF;
+   border-radius: 4px;
+ }
+ header nav ul > li.btn-outline:hover {
+   background:#FFFFFF;
+ }
+ header nav ul > li > a {
+   color:#FFFFFF;
+   text-decoration: none;
+ }
+ header nav ul > li.btn-outline:hover > a {
+   color:#34495E;
+ }
+ header .hero {
+   text-align: center;
+   display:block;
+   position: relative;
+ }
+
+/* button styling */
+.btn {
+  border-radius: 4px;
+  color: #FFFFFF;
+  font-weight: 700;
+  text-decoration: none;
+  padding: 10px 30px;
+  background: #2ecc71;
+  border: 2px solid #2ecc71;
+  box-shadow: 0px 2px 0px 0px #22894e;
+}
+
+/* benefits styling */
+.benefits {
+  text-align: center;
+  display:block;
+  position:relative;
+}
+.benefits ul {
+  margin: 0 auto;
+  padding:4em 0;
+}
+.benefits ul li {
+  list-style-type: none;
+  display: inline-block;
+}
+.benefits i {
+  color: #3498db;
+  font-size: 60px;
+  margin: 0;
+  vertical-align: middle;
+}
+.benefits h2 {
+  color: #3498db;
+}
+
+/* pricing */
+.pricing {
+  background: #34495e url("../images/background.png") top center no-repeat;
+  background: url("../images/background.png") top center no-repeat,
+    linear-gradient(206deg, #5f81a3 0%, #34495e 94%);
+}
+
+
+/* Anything past the margins is not displayed
+html, body{
+  overflow-x: hidden;
+}
+
+/* Applies styles to paragraphs and headings
+body {
+  font-family: "Lato", Helvetica, Arial, sans-serif;
+  color:#333333;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Varela Round", Helvetica, Arial, sans-serif;
+}
+h2 {
+  font-size: 28px;
+  font-weight: normal;
+  margin-bottom: 5px;
+}
+p {
+  font-size: 16px;
+  line-height: 19px;
+  font-weight: 200;
+}
+
+/* Apply grid formatting
+.container {
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  position: relative;
+}
+.container:before,
+.container:after {
+  content: " ";
+  display: table;
+}
+.container:after {
+  clear: both;
+}
+.one-half, .one-third, .one-fourth {
+  width:96%;
+  float:left;
+  position:relative;
+  min-height: 1px;
+  margin:0 2% 20px;
+}
+
 
 /* Media Queries (original)
 @media (min-width: 768px) {
@@ -74,8 +485,8 @@ p {
 }
 */
 
-/* Media Queries (for Mobile-First) */
-/* mobile phones */
+/* Media Queries (for Mobile-First)
+/* mobile phones
 @media (min-width 300px) and (max-width: 768px) {
   .container {
     width: 750px;
@@ -97,7 +508,7 @@ p {
   }
 }
 
-/* tablets */
+/* tablets
 @media (min-width: 768) and (max-width: 1199){
   .container {
     width: 992px;
@@ -119,7 +530,7 @@ p {
   }
 }
 
-  /* Desktop devices */
+  /* Desktop devices
   @media (min-width: 1200px) and (max-width: 1600px) {
     .container {
       width: 1170px;
@@ -208,7 +619,7 @@ header .hero img {
   margin:3em auto 0;
 }
 
-/* header (for Mobile-First) */
+/* header (for Mobile-First)
  header {
    color:#FFFFFF;
    background: #34495E;
@@ -248,9 +659,9 @@ header .hero img {
    display:block;
    position: relative;
  }
- */
 
- /* Buttons */
+
+ /* Buttons
  .btn {
    border-radius: 4px;
    color: #FFFFFF;
@@ -263,7 +674,7 @@ header .hero img {
  }
 
 
-/* Benefits */
+/* Benefits
 .benefits {
   text-align: center;
   display:block;
@@ -287,7 +698,7 @@ header .hero img {
   color: #3498db;
 }
 
-/* Pricing */
+/* Pricing
 .pricing {
   background: #34495E url("../images/background.png") top center no-repeat;
   background: url("../images/background.png") top center no-repeat, linear-gradient(206deg, #5F81A3 0%, #34495E 94%);
@@ -306,7 +717,7 @@ header .hero img {
    list-style-type: none;
  }
 
- /* Box model */
+ /* Box model
  .box {
    padding:0 15px 15px;
    background: #FFFFFF;
@@ -333,7 +744,7 @@ header .hero img {
    padding:10px 0;
  }
 
-/* box styling */
+/* box styling
  .box h4 {
   font-size:50px;
   font-weight: normal;
@@ -369,7 +780,7 @@ header .hero img {
   font-style:italic;
 }
 
-/* Testimonials */
+/* Testimonials
 .testimonials {
   padding:4em 0;
   text-align: center;
