@@ -47,7 +47,7 @@ p {
 }
 
 
-/* Media Queries (original) */
+/* Media Queries (original)
 @media (min-width: 768px) {
   .container {
     width: 750px;
@@ -73,8 +73,8 @@ p {
   }
 }
 
-/* Media Queries (for Mobile-First)
-/* mobile phones
+/* Media Queries (for Mobile-First) */
+/* mobile phones */
 @media (min-width 300px) and (max-width: 768px) {
   .container {
     width: 750px;
@@ -96,7 +96,7 @@ p {
   }
 }
 
-/* tablets
+/* tablets */
 @media (min-width: 768) and (max-width: 1199){
   .container {
     width: 992px;
@@ -118,7 +118,7 @@ p {
   }
 }
 
-  /* Desktop devices
+  /* Desktop devices */
   @media (min-width: 1200px) and (max-width: 1600px) {
     .container {
       width: 1170px;
@@ -148,10 +148,9 @@ p {
       margin: 3em auto;
     }
   }
-*/
 
 /* Header (original) */
-/* HEADER */
+/* HEADER
 header {
   color:#FFFFFF;
   background: #34495E;
@@ -208,7 +207,7 @@ header .hero {
  }
 
 
-/* header (for Mobile-First)
+/* header (for Mobile-First) */
  header {
    color:#FFFFFF;
    background: #34495E;
@@ -248,7 +247,6 @@ header .hero {
    display:block;
    position: relative;
  }
- */
 
  /* Buttons */
  .btn {
