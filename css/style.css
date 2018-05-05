@@ -38,13 +38,14 @@ p {
 .container:after {
   clear: both;
 }
-.one-half, .one-third, .one-fourth {
+.one-half, .one-third, .one-fourth, .staggered {
   width:96%;
   float:left;
   position:relative;
   min-height: 1px;
   margin:0 2% 20px;
 }
+
 
 
 /* Media Queries (original) */
@@ -65,6 +66,10 @@ p {
   }
   .one-fourth {
     width:21%;
+  }
+  .staggered {
+    width: 21%;
+    margin-top: 20px;
   }
 }
 @media (min-width: 1200px) {
