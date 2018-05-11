@@ -1,5 +1,5 @@
 /* Anything past the margins is not displayed */
-html, body{
+html, body {
   overflow-x: hidden;
 }
 
@@ -47,7 +47,7 @@ p {
 }
 
 
-/* Media Queries (original) */
+/* Media Queries (original) *
 @media (min-width: 768px) {
   .container {
     width: 750px;
@@ -73,33 +73,67 @@ p {
   }
 }
 
-/* Media Queries (for Mobile-First)
-/* mobile phones
-@media (min-width 300px) and (max-width: 768px) {
+/* Media Queries (for Mobile-First) */
+/* mobile phones */
+@media only screen and (min-width: 320px) {
   .container {
-    width: 750px;
+    width: 96%;
+  }
+  .one-half {
+    width: 46%;
   }
   header .hero h1 {
-    font-size: 32px;
+    font-size: 1.35em;
     font-weight: normal;
     margin: 95px 0 0;
   }
   header .hero p {
-    font-size: 16px;
-    line-height: 26px;
+    font-size: .75em;
+    line-height: 1.25em;
     font-weight: 100;
     margin: 10px 0 40px;
   }
   header .hero img {
     display: block;
-    margin: 3em auto;
+    margin: 1em auto;
+    max-width: 100%;
+  }
+  header nav ul {
+    display:inline;
+    text-align: right;
+    /* float:right; */
+    margin:0;
+  }
+  header nav ul > li {
+    list-style-type: none;
+    display: inline-block;
+    margin:0 15px;
+    font-size: .75em;
+  }
+  header nav ul > li.btn-outline {
+    padding:3px 3px;
+    border:1px solid #FFFFFF;
+    border-radius: 4px;
+  }
+  header nav ul > li.btn-outline:hover {
+    background:#FFFFFF;
+  }
+  header nav ul > li > a {
+    color:#FFFFFF;
+    text-decoration: none;
+  }
+  header nav ul > li.btn-outline:hover > a {
+    color:#34495E;
   }
 }
 
-/* tablets
-@media (min-width: 768) and (max-width: 1199){
+/* tablets */
+@media only screen and (min-width: 768px) {
   .container {
-    width: 992px;
+    width: 750px;
+  }
+  .one-fourth {
+    width:21%;
   }
   header .hero h1 {
     font-size: 40px;
@@ -118,19 +152,13 @@ p {
   }
 }
 
-  /* Desktop devices
-  @media (min-width: 1200px) and (max-width: 1600px) {
+  /* Desktop devices */
+  @media only screen and (min-width: 1200px) {
     .container {
       width: 1170px;
     }
-    .one-half {
-      width: 46%;
-    }
     .one-third {
-      width: 29.33333%;
-    }
-    .one-fourth {
-      width: 21%;
+      width:29.33333%;
     }
     header .hero h1 {
       font-size: 48px;
@@ -148,10 +176,9 @@ p {
       margin: 3em auto;
     }
   }
-*/
 
 /* Header (original) */
-/* HEADER */
+/* HEADER
 header {
   color:#FFFFFF;
   background: #34495E;
@@ -207,8 +234,7 @@ header .hero {
    margin:3em auto 0;
  }
 
-
-/* header (for Mobile-First)
+/* header (for Mobile-First) */
  header {
    color:#FFFFFF;
    background: #34495E;
@@ -217,38 +243,11 @@ header .hero {
  header nav {
    padding:1em 0;
  }
- header nav ul {
-   display:inline;
-   text-align: right;
-   float:right;
-   margin:0;
- }
- header nav ul > li {
-   list-style-type: none;
-   display: inline-block;
-   margin:0 15px;
- }
- header nav ul > li.btn-outline {
-   padding:10px 15px;
-   border:2px solid #FFFFFF;
-   border-radius: 4px;
- }
- header nav ul > li.btn-outline:hover {
-   background:#FFFFFF;
- }
- header nav ul > li > a {
-   color:#FFFFFF;
-   text-decoration: none;
- }
- header nav ul > li.btn-outline:hover > a {
-   color:#34495E;
- }
  header .hero {
    text-align: center;
    display:block;
    position: relative;
  }
- */
 
  /* Buttons */
  .btn {
@@ -451,8 +450,8 @@ footer .logo{
   margin: 0 auto;
   display: block;
 }
-@media (min-width: 992px){
-  footer{
+@media (min-width: 992px) {
+  footer {
     background-color: #3498DB;
     background-image: linear-gradient(to left,
        #3498DB 0%, #3498DB 33.33337%, #34495E 33.33337%, #34495E 100%);
