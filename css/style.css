@@ -474,6 +474,9 @@ footer .logo{
 .dashboard {
   background:#F7F7F7;
 }
+a:active {
+    background-color: purple;
+}
 .left-nav {
   height: 100vh;
   width:14.66666667%;
