@@ -170,6 +170,7 @@ header nav ul > li {
   list-style-type: none;
   display: inline-block;
   margin:0 15px;
+
 }
 header nav ul > li.btn-outline {
   padding:10px 15px;
@@ -474,8 +475,8 @@ footer .logo{
 .dashboard {
   background:#F7F7F7;
 }
-a:active {
-    background-color: purple;
+.active {
+    background-color: darkblue;
 }
 .left-nav {
   height: 100vh;
