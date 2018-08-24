@@ -20,7 +20,7 @@
     position: absolute;
     top: 100%;
     right: 0; /* dropdown left or right */
-    z-index: 1000;
+    z-index: 3;
     display: none;
     min-width: 100px;
     list-style: none;
@@ -41,7 +41,7 @@
    border-color: #FFFFFF transparent;
    display: block;
    width: 0;
-   z-index: 1;
+   z-index: 4;
    top: -8px;
    right: 10px;
   }
@@ -59,45 +59,45 @@
    font-weight:100;
   }
 
-  /* new menu style for dropup */ 
+  /* new menu style for dropup */
 
-  .dropit .dropit-open .dropit-menuSettings:after {
-   content: " ";
-   position: relative;
-   border-style: solid;
-   border-width: 0 8px 8px;
-   border-color: #FFFFFF transparent;
-   display: block;
-   width: 0;
-   z-index: 1;
-   bottom: -8px;
-   right: 10px;
-   }
-
-   /* Hide before plugin loads
-li { list-style: none; }
-a { text-decoration: none; float: left; }
-.menuSettings ul.dropit-submenu {
-    background-color: #fff;
-    border: 1px solid #b2b2b2;
-    padding: 6px 0;
-    margin: 3px 0 0 1px;
-    -webkit-border-radius: 3px;
-       -moz-border-radius: 3px;
-            border-radius: 3px;
-    -webkit-box-shadow: 0px 1px 3px rgba(0,0,0,0.15);
-       -moz-box-shadow: 0px 1px 3px rgba(0,0,0,0.15);
-            box-shadow: 0px 1px 3px rgba(0,0,0,0.15);
-}
-.menuSettings ul.dropit-submenu a {
+  .menuSettings {
+    top: 0;
+    bottom: 100%;
+    margin: 0;
+  }
+  .menuSettings .dropit-submenu {
     display: block;
+    position: absolute;
+    top: auto;
+    bottom: 100%;
+    left: -135px; /* dropdown left or right */
+    right: 0; /* dropdown left or right */
+    background-color: white;
+    box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.30);
+    border-radius: 4px;
+    width: 120px;
+    padding: 20px 20px;
+  }
+  .menuSettings .dropit-submenu:after{
+     content: " ";
+     position: absolute;
+     border-style: solid;
+     border-width: 0 8px 8px;
+     border-color: #FFFFFF transparent;
+     display: block;
+     width: 0;
+     z-index: 5;
+     bottom: -8px;
+     right: 10px;
+     transform-origin: 52% 98%;
+     transform: rotate(180deg);
+  }
+  .menuSettings .dropit-submenu li{
     font-size: 14px;
-    line-height: 25px;
-    color: #7a868e;
-    padding: 0 18px;
-}
-.menuSettings ul.dropit-submenu a:hover {
-    background: #248fc1;
-    color: #fff;
-    text-decoration: none;
-}
+    line-height: 7px;
+    margin: 5px 0;
+    text-align: center;
+    text-align: left;
+    float: left;
+  }
