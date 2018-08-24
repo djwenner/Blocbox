@@ -45,20 +45,23 @@
       <li><a href="#"><i class="fa fa-plus-square"></i> Add a new box</a></li>
     </ul>
   </div>
+
    <div class="settings">
      <img src="images/avatar_face.jpg" alt="Josephine's user avatar" >
      <p>Josephine Kirk</p>
-     <a href="#"><i class="fa fa-cog"></i></a>
-<!--     <ul class="menuSettings">         
+     <ul class="menuSettings">
+       <li>
+         <a href="#"><i class="fa fa-cog"></i></a>
+         <ul>
              <li><a href="#"><i class="fa fa-user"></i> Profile</a></li>
              <li><a href="#"><i class="fa fa-lock"></i> Password</a></li>
              <li><a href="#"><i class="far fa-users"></i> Friends</a></li>
          </ul>
        </li>
      </ul>
--->
    </div>
-  </nav>
+
+</nav>
 
   <main role="main">
 
@@ -149,11 +152,11 @@
      $( "#menu" ).click(function() {
          $("#left-nav").toggleClass("open", 200);
      }); </script>
-<!--   <script type="text/javascript">
+   <script type="text/javascript">
        $(".menuSettings").dropit();
        $( "#menuSettings" ).click(function() {
            $("#left-nav").toggleClass("open", 200);
-     }); -->
+     });
    </script>
 </body>
 </html>
